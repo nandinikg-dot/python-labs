@@ -1,0 +1,66 @@
+1)
+string="to change the overall look of your document.to change the look available in the gallery"
+words=string.split()                                #split the sentence into words
+word_counts={}
+for word in words:
+    if word in word_counts:
+        word_counts[word]+=1
+    else:
+        word_counts[word]=1
+for word,count in word_counts.items():                 #display the word counts   
+
+OUTPUT:
+to:1
+change:2
+the:3
+overall:1
+look:2
+of:1
+your:1
+document.to:1
+available:1
+in:1
+gallery:1
+-------------------------------------------------------------------------------------------------------------------------------------------------
+2)
+string="\nBest \nDeeptech \npython \nBest \nDeeptech \npython \ntraining\n"  
+new_string=string.replace("\n","")                               # remove the new line char
+print(new_string)                                                #display the new string
+
+OUTPUT:
+Best Deeptech python Best Deeptech python training
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+3)
+string="deeptech python training"
+reverse_string=""
+for i in string:
+  reverse_string=' '.join(reversed(string.split()))
+print(reverse_string)
+
+OUTPUT:
+training python deeptech
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+4)
+text = "Welcome to python Training"
+# Define vowels
+vowels = "aeiouAEIOU"
+# Count and display the vowels
+vowel_counts = {vowel: text.count(vowel) for vowel in vowels}
+print("Vowel counts:")
+for vowel, count in vowel_counts.items():
+    print(f"{vowel}: {count}")
+
+OUTPUT:
+Vowel counts:
+a: 1
+e: 2
+i: 2
+o: 3
+u: 0
+A: 0
+E: 0
+I: 0
+O: 0
+U: 0

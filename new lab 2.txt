@@ -1,0 +1,67 @@
+1)
+number = int(input("Enter a number: "))      #take input from the user
+if number % 2 == 0:                          #check if the number is even or lab
+    result = "Even"
+else:
+   result = "Odd"                            # print the result
+print(f"The number is",result)
+
+
+
+OUTPUT:
+Enter a number: 5
+The number is Odd
+
+Enter a number: 40
+The number is Even
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------2)
+num1=int(input("enter the first number:"))              # take input/numbers from the user
+num2=int(input("enter the second number:"))
+print("original numbers")                               # print original numbers which users give first and second number before swapping
+print("number1:",num1)
+print("number2:",num2)
+temp=num1                                               #swapping numbers by using temparary value
+
+num1=num2
+num2=temp
+print("swapped numbers:")                             #dispaly the swapped numbers
+print("number1:",num1)
+print("number 2:",num2)
+
+
+
+OUTPUT:
+enter the first number:10
+enter the second number:20
+original numbers
+number1: 10
+number2: 20
+swapped numbers:
+number1: 20
+number 2: 10
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------3)
+kilometers = float(input("Enter the distance in kilometers: "))      # to take input from the user
+conversion_factor = 0.621371                                         #conversation factor to km to mails
+miles = kilometers * conversion_factor                               #convert km to mail
+print(kilometers, "kilometers is equal to", miles, "miles.")         #display/print the result
+
+
+OUTPUT:
+Enter the distance in kilometers: 10
+10.0 kilometers is equal to 6.21371 miles.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------4)
+principal = 200        # Principal amount
+rate = 5               # Rate of interest per year
+time = 5               # Time period in years
+simple_interest = (principal * rate * time) / 100   # Calculate simple interest
+print(f"The simple interest on Rs. {principal} for {time} years at {rate}% per year is Rs. {simple_interest}.") # display the result
+
+OUTPUT:
+The simple interest on Rs. 200 for 5 years at 5% per year is Rs. 50.0.
+
+
+

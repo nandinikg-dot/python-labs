@@ -1,0 +1,66 @@
+1)
+def divide_numbers(num1,num2):
+    try:
+        result = num1 / num2      # to perform the division
+        print("the Result of the division is:", result)   # it successful print the result
+    except ZeroDivisionError:     # if division by zero occurs,catch the exception and display on error
+        print("Error: Division by zero is not allowed.")
+num1 = 10
+num2 = 0
+divide_numbers(num1, num2)
+
+OUTPUT:
+Error: Division by zero is not allowed.
+______________________________________________________________________________________________________________________________________________________
+
+2)Write a Python program that prompts the user to input an integer and raises a ValueError exception if the input is not a valid integer. 
+
+def get_valid_integer():
+    while True:
+        try:
+            user_input = input("Please enter an integer:") # Prompt the user to input an integer
+            integer_value = int(user_input)                 # Attempt to convert the input to an integer
+            return integer_value                            # If successful, return the integer value
+        except ValueError:
+            print("Error: Please enter a valid integer.")    # If conversion fails, print an error message and continue the loop
+# Call the function to get a valid integer from the user
+valid_integer = get_valid_integer()
+# Print the valid integer
+print("Valid integer entered:", valid_integer)
+
+OUTPUT:
+
+Please enter an integer: 25
+Valid integer entered: 25
+
+Please enter an integer: nandu
+Error: Please enter a valid integer.
+______________________________________________________________________________________________________________________________________________________________________
+3)Write a Python program that opens a file and handles a FileNotFoundError exception if the file does not exist. 
+try:
+    file_name=input("enter the name of the files:")    #take input from the user
+    with open(file_name,'r')as file:                    # open the file in read mode
+        contents=file.read()                            #read the contentsof the file
+        print("file contents:")                         # print the contents of the files
+        print(contents)
+except FileNotFoundError:                                
+            print("Error:file not found.")
+			
+OUTPUT:
+enter the name of the files:lab10.txt
+Error:file not found.
+
+______________________________________________________________________________________________________________________________________________________
+4)Write a Python program that prompts the user to input two numbers and raises a TypeError exception if the inputs are not numerical
+try:
+    num1 = float(input("Enter the first number: "))    # to take number from the user
+    num2 = float(input("Enter the second number: "))
+    result = num1 + num2                                # calculation with the numbers(adding two numbers)
+    print("The result is:", result)                      # Print the result
+except ValueError:
+    # Handle the ValueError exception (raised when non-numerical input is given)
+    print("Error: Please enter numerical values for both numbers.")
+
+OUTPUT:
+Enter the first number: nandu
+Error: Please enter numerical values for both numbers.

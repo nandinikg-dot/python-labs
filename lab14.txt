@@ -1,0 +1,64 @@
+1)Write a Python program to convert a list to a tuple. 
+Input: listx = [5, 10, 7, 4, 15, 3]
+
+listx= [5, 10, 7, 4, 15, 3]      #define listx
+tuplex= tuple(listx)             #we use tuple function convert the list in to tuple
+print(tuplex)                    #print the result
+
+OUTPUT:
+(5, 10, 7, 4, 15, 3)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+2)Write a Python program to find the number of times 4 appears in the tuple. 
+Input: tuplex = (2, 4, 5, 6, 2, 3, 4, 4, 7 ) 
+
+tuplex=(2,4,5,6,2,3,4,4,7)    #define tuplex
+count=tuplex.count(4)         # count the number of times
+print(count)                  #print count
+
+OUTPUT:
+3
+---------------------------------------------------------------------------------------------------------------------------------------------
+3)Write a Python program to calculate the sum of the numbers in a given tuple. 
+Input: tuples_list = [(1, 2), (3, 4), (5, 6)]
+
+tuple_list=[(1,2),(3,4),(5,6)]                   #define a list of tuple
+sum_of_numbers=sum(sum(t)for t in tuple_list()    #iterate over each tuple in the list
+print(sum_of_numbers)                             # print the result
+
+OUTPUT:
+21
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+4).Write a python program and iterate the given tuples
+ Input: 
+employee1 = ("John Doe", 101, "Human Resources", 60000) 
+employee2 = ("Alice Smith", 102, "Marketing", 55000) 
+employee3 = ("Bob Johnson", 103, "Engineering", 75000)
+
+employee1 = ("John Doe", 101, "Human Resourcces",60000)
+employee2 = ("Alice Smith", 102, "Marketing", 55000)
+employee3 = ("Bob Johnson", 103, "Engineering", 75000)
+employee_list = [employee1, employee2, employee3]       #create a list called employee list
+for employee in employee_list:                      #for loop iterate each tuple in the list
+    name, emp_id, department, salary = employee
+    print("Name:", name)                           # inside the loop separeate the variables
+    print("Employee ID:", emp_id)                  #print the information for each employee
+    print("Department:", department)
+    print("Salary:", salary)
+    print()
+
+OUTPUT:
+Name: John Doe
+Employee ID: 101
+Department: Human Resources
+Salary: 60000
+
+Name: Alice Smith
+Employee ID: 102
+Department: Marketing
+Salary: 55000
+
+Name: Bob Johnson
+Employee ID: 103
+Department: Engineering
+Salary: 75000

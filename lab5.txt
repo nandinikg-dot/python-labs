@@ -1,0 +1,79 @@
+1)
+num=10
+while num >=1:
+    print(num)
+    num-=1
+	
+OUTPUT:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+2)
+count =0
+while True:
+    count+=1
+    print("count:",count)
+    if count ==5:
+        print("breaking out of the loop")
+        break
+    print("loop has ended")
+
+
+
+OUTPUT:
+count: 1
+loop has ended
+count: 2
+loop has ended
+count: 3
+loop has ended
+count: 4
+loop has ended
+count: 5
+breaking out of the loop
+
+3)
+string="python"
+length=0
+while length < len(string):
+ print(string[length])
+length += 1
+print("find len of the string:",length)
+
+
+
+OUTPUT:
+p
+y
+t
+h
+o
+n
+
+4)
+num= int(input("enter an integer:"))
+factorial=1                                        #initialize variables
+counter=1
+while counter <=num:                               #calculate factorial of",num,"is",factorial)
+    factorial*=counter
+    counter+=1
+    print("the factorial of", num,"is",factorial)  #display the result
+
+OUTPUT:
+enter an integer:6
+the factorial of 6 is 1
+the factorial of 6 is 2
+the factorial of 6 is 6
+the factorial of 6 is 24
+the factorial of 6 is 120
+the factorial of 6 is 720
+

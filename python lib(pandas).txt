@@ -1,0 +1,17 @@
+python library
+1) pandas -pandas is a pythonlybrary used for working with lorg
+
+applications of pandas
+1)datascience
+2)machine learning
+3)finance
+4)statistics
+
+How to install pandas
+//pip install pandas
+import pandas as 
+
+function of pandas  
+1.data cleaning 
+2.data analyzing
+3.data manuplation

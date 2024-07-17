@@ -1,0 +1,37 @@
+1)
+def div(a,b):
+  return a/b
+result=div(10,2)                         #call the  function and pass two numbers
+print("the division result is:",result)  #display the division result
+
+OUTPUT:
+the division result is: 5.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+2)
+def square(num):
+    return num**2
+result=square(3)                       #call the  function and pass two numbers
+print("the square of the number is:",result)# displaythe square of the number
+
+
+OUTPUT:
+the square of the number is: 9
+--------------------------------------------------------------------------------------------------------------------------------------------
+3)
+import random
+numbers =[random.randint(1,100)for_in range(5)]
+print("maximum:",max(numbers))
+print("minimum:",min(numbers))
+
+
+OUTPUT:
+maximum:10
+minimum:3
+----------------------------------------------------------------------------------------------------------------------------------------------
+4)
+name=input("enter a name:")                   #take name from the user
+print("lowercase name:",name.lower())          #Display the name in lower case
+
+OUTPUT:
+enter a name:NANDU
+lowercase name: nandu
